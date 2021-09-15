@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const axios = require('axios');
+
+const helper = require('./common/common');
 
 const app = express();
 app.set('trust proxy', true);
@@ -8,16 +9,16 @@ app.use(express.json());
 app.use(cors());
 
 app.post('/api/search', async (req, res) => {
-	const { query } = req.body;
-
-	const API_URL = 'https://api.nal.usda.gov/fdc/v1/foods';
+	const { ingredients } = req.body;
 
 	try {
-		const response = await axios.get(`${API_URL}/search?api_key=DEMO_KEY&query=${JSON.stringify(query)}`);
-		res.send(response.data);
-	} catch (e) {
-		console.log(e);
-		res.status(400);
+		const totalCalories = await helper.getIngredientsCalories(ingredients);
+		res.status(200).send({
+			calories: totalCalories
+		});
+	} catch (err) {
+		console.log(err);
+		res.status(400).send('Something went wrong...');
 	}
 });
 
