@@ -13,6 +13,7 @@ app.post('/api/search', async (req, res) => {
 	const { query } = req.body;
 
 	const API_URL = 'https://api.nal.usda.gov/fdc/v1/foods';
+
 	try {
 		const response = await axios.get(`${API_URL}/search?api_key=DEMO_KEY&query=${JSON.stringify(query)}`);
 		res.send(response.data);
@@ -20,6 +21,10 @@ app.post('/api/search', async (req, res) => {
 		console.log(e);
 		res.status(400);
 	}
+});
+
+app.get('/helloworld', (req, res) => {
+	res.send('Hello World!');
 });
 
 app.get('*', (req, res) => {

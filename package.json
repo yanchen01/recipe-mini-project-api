@@ -1,26 +1,27 @@
 {
-  "name": "recipe-mini-project-api",
-  "version": "1.0.0",
-  "description": "EC463 Mini Project API",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm test",
-    "start": "nodemon src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yanchen01/recipe-mini-project-api.git"
-  },
-  "author": "Yan Chen & Hanlin Mai",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yanchen01/recipe-mini-project-api/issues"
-  },
-  "homepage": "https://github.com/yanchen01/recipe-mini-project-api#readme",
-  "dependencies": {
-    "axios": "^0.21.4",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.12"
-  }
+	"name": "recipe-mini-project-api",
+	"version": "1.0.0",
+	"description": "EC463 Mini Project API",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm test",
+		"start": "node src/index.js",
+		"dev": "nodemon src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yanchen01/recipe-mini-project-api.git"
+	},
+	"author": "Yan Chen & Hanlin Mai",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/yanchen01/recipe-mini-project-api/issues"
+	},
+	"homepage": "https://github.com/yanchen01/recipe-mini-project-api#readme",
+	"dependencies": {
+		"axios": "^0.21.4",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"nodemon": "^2.0.12"
+	}
 }
