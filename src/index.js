@@ -7,8 +7,6 @@ app.set('trust proxy', true);
 app.use(express.json());
 app.use(cors());
 
-const PORT = 3000;
-
 app.post('/api/search', async (req, res) => {
 	const { query } = req.body;
 
@@ -30,6 +28,8 @@ app.get('/helloworld', (req, res) => {
 app.get('*', (req, res) => {
 	res.send('Hello World!');
 });
+
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
 	console.log(`API Server listening on port: ${PORT}`);
