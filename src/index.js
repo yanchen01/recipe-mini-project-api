@@ -22,12 +22,8 @@ app.post('/api/search', async (req, res) => {
 	}
 });
 
-app.get('/helloworld', (req, res) => {
-	res.send('Hello World!');
-});
-
 app.get('*', (req, res) => {
-	res.send('Hello World!');
+	res.status(403).send('Forbidden Access');
 });
 
 const PORT = process.env.PORT || 3000;
