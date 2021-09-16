@@ -1,11 +1,9 @@
 # **Recipe Mini Project**
 
 ###### EC463 Fall 2021
-
 ###### Team Members: Yan Chen, Hanlin Mai
 
-
-========================================================
+===========================================================================================================
 
 This project is about learning how to design and implement a recipe calories cross-platform mobile app in React Native. We have decided to choose React Native as our UI framework and Express + Node.js as our backend API framework. React Native is robust and cross-platform, and also supports lots of packages. Express + Node.js provides an easy setup and lightweight packages, which is also one of the fastest backend frameworks.
 
