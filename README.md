@@ -1,7 +1,7 @@
 # **Recipe Mini Project**
 
-###### EC463 Fall 2021
-###### Team Members: Yan Chen, Hanlin Mai
+### EC463 Fall 2021
+### Team Members: Yan Chen, Hanlin Mai
 
 =======================================================================================================
 
