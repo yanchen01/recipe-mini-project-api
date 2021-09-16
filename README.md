@@ -14,12 +14,31 @@ We also included *Github Actions* to deploy our Backend API automatically to Her
 * [Frontend UI Repo](https://github.com/yanchen01/recipe-mini-project-ui)
 * [Backend API Repo](https://github.com/yanchen01/recipe-mini-project-api)
 
+### Description of Home.js
+1. const Container: This is the container for the whole user interface.
+2. const RecipeContainer: This is the container for the receipt, which is right in the center of the APP.
+3. const WelcomeText: This is the text of “Welcome, user!”.
+4. const RecipeText: This contains the name of the recipe.
+5. const Home: This contains the main frame of the architecture.
+6. It will return the layout of our home screen.
 
-# Documentation
+### Description of AddRecipe.js
+In this file, the main frame and the fonts for the adding recipe container are set.
+
+### Description of BarcodeScanner.js
+
+### Description of Login.js
+First, we will ask the users to enter their accounts' information, which includes their e-mail addresses, passwords and usernames on this page. After they enter the information, the program will automatically connected to the authentication and check whether the data is valid or not.
+
+### Description of Signup.js
+If the users haven't registered any accounts in the database, the app will ask them to sign up for their own accounts.  On this page, the program will help users to create accounts. Users will provide their full names, e-mail addresses and passwords.
+
+### Description of LoginStyle.js & SignupStyle.js
+
+### Documentation
 * [Architecture Diagram](architecture_diagram.png)
 <img src="architecture_diagram.png">
 
-
-# Demo Video
+### Demo Video
 * [Demo Video](Demo_Video.mp4)
 <video src="Demo_Video.mp4">
