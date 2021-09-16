@@ -15,6 +15,7 @@ We also included *Github Actions* to deploy our Backend API automatically to Her
 ## Documentation
 * [Architecture Diagram](architecture_diagram.png)
 <img src="architecture_diagram.png">
+
 ## Description of Home.js
 1. const Container: This is the container for the whole user interface.
 2. const RecipeContainer: This is the container for the receipt, which is right in the center of the APP.
