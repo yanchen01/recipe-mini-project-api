@@ -1,7 +1,5 @@
 const axios = require('axios');
 
-const JOULES_TO_CAL = 1 / 4.184;
-
 async function getIngredientsCalories(ingredients) {
 	const API_URL = 'https://api.nal.usda.gov/fdc/v1/foods';
 
@@ -12,7 +10,7 @@ async function getIngredientsCalories(ingredients) {
 		const item = response.data.foods.length > 0 ? response.data.foods[0] : null;
 		if (item) {
 			let energyObj = item.foodNutrients.filter((nutrient) => nutrient.nutrientId === 1008)[0];
-			totalCalories += energyObj.value * JOULES_TO_CAL * ingredient.servings;
+			totalCalories += energyObj.value * ingredient.servings;
 		}
 	}
 	return Math.round(totalCalories);
